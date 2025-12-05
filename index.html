@@ -8,8 +8,8 @@
     body {
       margin: 0;
       height: 100vh;
-      background: #0d1117;
-      color: #8b949e;
+      background: #000000;
+      color: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       display: flex;
       align-items: center;
@@ -17,19 +17,20 @@
     }
 
     .card {
-      background: #161b22;
+      background: #000000;
       padding: 40px 60px;
       border-radius: 12px;
-      border: 1px solid #30363d;
+      border: 1px solid #000000;
       max-width: 480px;
-      width: 100%;
+
+      margin: 0 auto;
     }
 
     h1 {
       margin: 0 0 8px 0;
       font-size: 26px;
       font-weight: 600;
-      color: #58a6ff;
+      color: #ffffff;
     }
 
     h1 a {
@@ -39,6 +40,7 @@
 
     h1 a:hover {
       text-decoration: underline;
+      text-decoration-style: wavy;
     }
 
     .title {
@@ -58,18 +60,29 @@
       margin-bottom: 10px;
     }
 
-    li a {
-      color: #58a6ff;
+    a {
+      color: #ffffff;
       text-decoration: none;
     }
 
-    li a:hover {
+    a:hover {
       text-decoration: underline;
+      text-decoration-style: wavy;
+      font-style: italic;
     }
-
+    .icon:hover {
+      animation: shake 0.5s infinite;
+    }
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-1px); }
+      50% { transform: translateX(1px); }
+      75% { transform: translateX(-1px); }
+      100% { transform: translateX(0); }
+    }
     .icon {
       display: inline-block;
-      width: 20px;
+      width: 40px;
       text-align: center;
       margin-right: 8px;
       color: #8b949e;
@@ -79,16 +92,11 @@
 </head>
 <body>
   <div class="card">
-    <h1>
-      <i class="fa-solid fa-ban" style="color: #ffffff;"></i> <a href="https://github.com/usertermed">Damien Sullins</a>
-    </h1>
-
-    <ul>
-      <li><span class="icon"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></span><a href="mailto:damiensully413@gmail.com">damiensully413</a></li>
-      <li><span class="icon"><i class="fa-brands fa-github" style="color: #ffffff;"></i></span><a href="https://github.com/usertermed" target="_blank">usertermed</a></li>
-      <li><span class="icon"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></span><a href="https://www.linkedin.com/in/d-s-8468aa39a/" target="_blank">D S</a></li>
-      <li><span class="icon"><i class="fa-solid fa-qrcode" style="color: #ffffff;"></i></span><a href="https://gravatar.com/internetfullbc343e9de2" target="_blank">usertermed</a></li>
-    </ul>
+      <a href="me.html"><span class="icon" title="Portfolio / About"><i class="fa-solid fa-ban fa-2xl" style="color: #ffffff;"></i></span></a>
+      <a href="mailto:damiensully413@gmail.com"><span class="icon" title="Contact"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></span></a>
+      <a href="https://github.com/usertermed"><span class="icon" title="GitHub""><i class="fa-brands fa-github" style="color: #ffffff;"></i></span></a>
+      <a href="https://www.linkedin.com/in/d-s-8468aa39a/" title="LinkedIn""><span class="icon"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></span></a>
+      <a href="https://gravatar.com/internetfullbc343e9de2" title="Gravatar"><span class="icon"><i class="fa-solid fa-qrcode" style="color: #ffffff;"></i></span></a>
   </div>
 </body>
 </html>
