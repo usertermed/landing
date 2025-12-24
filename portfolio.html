@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>usertermed/Portfolio</title>
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       background: #000000;
       color: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
     .card {
@@ -23,6 +24,7 @@
       border: 1px solid #000000;
       max-width: 480px;
       width: 100%;
+      margin: auto;
     }
 
     h1 {
@@ -62,9 +64,11 @@
       color: #ffffff;
       text-decoration: none;
     }
+
     a {
-        color: white;
+      color: white;
     }
+
     li a:hover {
       text-decoration: underline;
     }
@@ -79,6 +83,7 @@
   </style>
   <script src="https://kit.fontawesome.com/f08a128311.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <div class="card">
     <h1>
@@ -86,13 +91,16 @@
     </h1>
 
     <ul>
-        <li>Community Pins - <a href="https://communitypins-89698.web.app/"><em>Visit</em></a></li>
-        <li>Internet Checkpoint - <a href="https://the-checkpoint.vercel.app"><em>Visit</em></a></li>
-        <li>Just the News - <a href="https://justthenews.vercel.app"><em>Visit</em></a></li>
-        <li>Rock Almighty - <a href="https://rockalmighty.vercel.app"><em>Visit</em></a></li>
+      <li>Community Pins - <a href="https://communitypins-89698.web.app/"><em>Visit</em></a></li>
+      <li>Internet Checkpoint - <a href="https://the-checkpoint.vercel.app"><em>Visit</em></a></li>
+      <li>Just the News - <a href="https://justthenews.vercel.app"><em>Visit</em></a></li>
+      <li>Rock Almighty - <a href="https://rockalmighty.vercel.app"><em>Visit</em></a></li>
     </ul>
-    
-    <a href="/"><p>Go home</p></a>
+
+    <a href="/">
+      <p>Go home</p>
+    </a>
   </div>
 </body>
+
 </html>
